@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>第二篇博客 - My Blog</title>
+  <title>github的使用 - My Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="zero1230" />
-  <meta name="description" content="大家好 这是第二篇博客,测试用" />
+  <meta name="description" content="github的使用 使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -57,26 +57,26 @@
 
 
 
-<meta property="og:title" content="第二篇博客" />
-<meta property="og:description" content="大家好 这是第二篇博客,测试用" />
+<meta property="og:title" content="github的使用" />
+<meta property="og:description" content="github的使用 使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" />
 <meta property="article:published_time" content="2019-08-11T14:32:52+08:00" />
 <meta property="article:modified_time" content="2019-08-11T14:32:52+08:00" />
-<meta itemprop="name" content="第二篇博客">
-<meta itemprop="description" content="大家好 这是第二篇博客,测试用">
+<meta itemprop="name" content="github的使用">
+<meta itemprop="description" content="github的使用 使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你">
 
 
 <meta itemprop="datePublished" content="2019-08-11T14:32:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-11T14:32:52&#43;08:00" />
-<meta itemprop="wordCount" content="14">
+<meta itemprop="wordCount" content="750">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="第二篇博客"/>
-<meta name="twitter:description" content="大家好 这是第二篇博客,测试用"/>
+<meta name="twitter:title" content="github的使用"/>
+<meta name="twitter:description" content="github的使用 使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -338,7 +338,7 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">第二篇博客</h1>
+      <h1 class="post-title">github的使用</h1>
       
       <div class="post-meta">
         <time datetime="2019-08-11" class="post-time">
@@ -362,7 +362,10 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#大家好">大家好</a></li>
+<li>
+<ul>
+<li><a href="#github的使用">github的使用</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
@@ -372,9 +375,19 @@
     <div class="post-content">
       
 
-<h1 id="大家好">大家好</h1>
+<h2 id="github的使用">github的使用</h2>
 
-<p>这是第二篇博客,测试用</p>
+<p>使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你一个公钥确认身份
+    创建一个新的仓库，使用git remote add origin git@github.com:xxx/blog-demo01.git，添加一个远程仓库地址，git push -u origin master 把本地的仓库master分支推到远程仓库上的master分支。
+    有新的修改后，用git add 添加修改的文件，git commit -v 提交，最后git push 在推到远程仓库，同步。有时候别人修改了远程仓库，需要git pull，然后才能git push.
+    使用git clone 命令，可以下载远程仓库到本地。</p>
+
+<p>搭建个人博客，需要先熟悉markdown基本语法。
+#加空格 表示一级标题，代码可以用<code>代码</code> 的格式，链接地址使用 <a href="地址">地址名称</a>，显示图片则使用
+！<a href="图片地址">图片名称</a>。可以实现git+github+md+vscode实现博客的编写。yarn add global git-open，安装后使用git open 直接打开对应的参考，方便修改对应的blog.md.</p>
+
+<p>也可以使用hugo来搭建一个个人博客。首先下载release版本。然后配置好path路径。如目录是software/hugo/hugo.exe，则配置path路径为software/hugo就可以了，在命令行输入hugo version，显示版本就安装成功了。
+安装hugo官网的7部步骤来，输入命令行。到最后的hugo命令时，还需要部署到github上。需要在生产的博客文件添加.gitignore文件，在里面输入/public/表示忽略public，里面的内容单独git init，git add ，git commit -v git remote add &hellip;&hellip;最后git push 上传到github仓库.hugo个人博客支持换主题，可以查找对应的换肤文档，来实现换主题功能。</p>
 
     </div>
 

@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>第二篇博客</title>
+      <title>github的使用</title>
       <link>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 11 Aug 2019 14:32:52 +0800</pubDate>
       
       <guid>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <description>大家好 这是第二篇博客,测试用</description>
+      <description>github的使用 使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你</description>
     </item>
     
     <item>
