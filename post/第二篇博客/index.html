@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-08-11T14:32:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-11T14:32:52&#43;08:00" />
-<meta itemprop="wordCount" content="750">
+<meta itemprop="wordCount" content="704">
 
 
 
@@ -382,9 +382,7 @@
     有新的修改后，用git add 添加修改的文件，git commit -v 提交，最后git push 在推到远程仓库，同步。有时候别人修改了远程仓库，需要git pull，然后才能git push.
     使用git clone 命令，可以下载远程仓库到本地。</p>
 
-<p>搭建个人博客，需要先熟悉markdown基本语法。
-#加空格 表示一级标题，代码可以用<code>代码</code> 的格式，链接地址使用 <a href="地址">地址名称</a>，显示图片则使用
-！<a href="图片地址">图片名称</a>。可以实现git+github+md+vscode实现博客的编写。yarn add global git-open，安装后使用git open 直接打开对应的参考，方便修改对应的blog.md.</p>
+<p>搭建个人博客，需要先熟悉markdown基本语法。可以实现git+github+md+vscode实现博客的编写。yarn add global git-open，安装后使用git open 直接打开对应的参考，方便修改对应的blog.md.</p>
 
 <p>也可以使用hugo来搭建一个个人博客。首先下载release版本。然后配置好path路径。如目录是software/hugo/hugo.exe，则配置path路径为software/hugo就可以了，在命令行输入hugo version，显示版本就安装成功了。
 安装hugo官网的7部步骤来，输入命令行。到最后的hugo命令时，还需要部署到github上。需要在生产的博客文件添加.gitignore文件，在里面输入/public/表示忽略public，里面的内容单独git init，git add ，git commit -v git remote add &hellip;&hellip;最后git push 上传到github仓库.hugo个人博客支持换主题，可以查找对应的换肤文档，来实现换主题功能。</p>
