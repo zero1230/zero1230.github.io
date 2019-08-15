@@ -60,6 +60,135 @@
     
     <item>
       <title>开播大吉</title>
+      <link>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;html标签入门&#34;&gt;html标签入门&lt;/h1&gt;
+
+&lt;h2 id=&#34;html页面起始&#34;&gt;html页面起始&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;!-- 文档类型 --&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;!-- 语言的标签，可以换成ch-ZN --&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+    &amp;lt;!-- 文件的字符编码 --&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;
+    &amp;lt;!-- 禁用缩放 --&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt;
+    &amp;lt;!-- 兼容手机，告诉ie的版本 --&amp;gt;
+    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+    &amp;lt;!-- 标题 --&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;章节标签&#34;&gt;章节标签&lt;/h2&gt;
+
+&lt;p&gt;标题 h1-h6&lt;/p&gt;
+
+&lt;p&gt;章节 section&lt;/p&gt;
+
+&lt;p&gt;文章 article&lt;/p&gt;
+
+&lt;p&gt;段落 p&lt;/p&gt;
+
+&lt;p&gt;头部 header&lt;/p&gt;
+
+&lt;p&gt;脚部 footer&lt;/p&gt;
+
+&lt;p&gt;主要内容 main&lt;/p&gt;
+
+&lt;p&gt;旁支内容 aside&lt;/p&gt;
+
+&lt;p&gt;划分div&lt;/p&gt;
+
+&lt;h2 id=&#34;全局属性&#34;&gt;全局属性&lt;/h2&gt;
+
+&lt;p&gt;所有标签都有的属性&lt;/p&gt;
+
+&lt;p&gt;class 表示类属性&lt;/p&gt;
+
+&lt;p&gt;contenteditable 表示可以编辑&lt;/p&gt;
+
+&lt;p&gt;hidden 隐藏属性&lt;/p&gt;
+
+&lt;p&gt;id 不到万不得已，不要使用，因为有2个标签id值都一样，也不会报错&lt;/p&gt;
+
+&lt;p&gt;style 样式属性&lt;/p&gt;
+
+&lt;p&gt;tabindex 可以使用tab键，上下移动。数值为0时，表示最后访问。为-1表示永远访问不到&lt;/p&gt;
+
+&lt;p&gt;title 显示内容的标签&lt;/p&gt;
+
+&lt;h2 id=&#34;默认样式&#34;&gt;默认样式&lt;/h2&gt;
+
+&lt;p&gt;html会自带一些样式。因为那时候还没有css，有些样式太难看，需要清楚样式。自定义一个cssreset.css,如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input,
+button {
+  font-family: inherit;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;内容标签&#34;&gt;内容标签&lt;/h2&gt;
+
+&lt;p&gt;ol+li 有序列表内容&lt;/p&gt;
+
+&lt;p&gt;ul+li 无序列表内容&lt;/p&gt;
+
+&lt;p&gt;dl+dt+dd 描述内容&lt;/p&gt;
+
+&lt;p&gt;pre 保留空格和回车&lt;/p&gt;
+
+&lt;p&gt;hr 水平线&lt;/p&gt;
+
+&lt;p&gt;br 换行&lt;/p&gt;
+
+&lt;p&gt;a 链接&lt;/p&gt;
+
+&lt;p&gt;em 语气强调&lt;/p&gt;
+
+&lt;p&gt;strong  更加强烈的强调&lt;/p&gt;
+
+&lt;p&gt;code  保持字体的对齐&lt;/p&gt;
+
+&lt;p&gt;quote 行内引用&lt;/p&gt;
+
+&lt;p&gt;blockquote  换行引用&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>开播大吉</title>
       <link>http://localhost:1313/post/%E5%BC%80%E6%92%AD%E5%A4%A7%E5%90%89/</link>
       <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
       
