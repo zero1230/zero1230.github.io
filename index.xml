@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 11 Aug 2019 14:32:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 14:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -35,41 +35,21 @@
     </item>
     
     <item>
-      <title>github的使用</title>
-      <link>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Sun, 11 Aug 2019 14:32:52 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      
-        <description>
-
-&lt;h2 id=&#34;github的使用&#34;&gt;github的使用&lt;/h2&gt;
-
-&lt;p&gt;使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你一个公钥确认身份
-    创建一个新的仓库，使用git remote add origin git@github.com:xxx/blog-demo01.git，添加一个远程仓库地址，git push -u origin master 把本地的仓库master分支推到远程仓库上的master分支。
-    有新的修改后，用git add 添加修改的文件，git commit -v 提交，最后git push 在推到远程仓库，同步。有时候别人修改了远程仓库，需要git pull，然后才能git push.
-    使用git clone 命令，可以下载远程仓库到本地。&lt;/p&gt;
-
-&lt;p&gt;搭建个人博客，需要先熟悉markdown基本语法。可以实现git+github+md+vscode实现博客的编写。yarn add global git-open，安装后使用git open 直接打开对应的参考，方便修改对应的blog.md.&lt;/p&gt;
-
-&lt;p&gt;也可以使用hugo来搭建一个个人博客。首先下载release版本。然后配置好path路径。如目录是software/hugo/hugo.exe，则配置path路径为software/hugo就可以了，在命令行输入hugo version，显示版本就安装成功了。
-安装hugo官网的7部步骤来，输入命令行。到最后的hugo命令时，还需要部署到github上。需要在生产的博客文件添加.gitignore文件，在里面输入/public/表示忽略public，里面的内容单独git init，git add ，git commit -v git remote add &amp;hellip;&amp;hellip;最后git push 上传到github仓库.hugo个人博客支持换主题，可以查找对应的换肤文档，来实现换主题功能。&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>html标签入门</title>
+      <title>html标签入门笔记1</title>
       <link>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
+      <pubDate>Mon, 12 Aug 2019 14:30:52 +0800</pubDate>
       
       <guid>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</guid>
       
         <description>
 
-&lt;h1 id=&#34;html标签入门&#34;&gt;html标签入门&lt;/h1&gt;
+&lt;h1 id=&#34;html-标签入门笔记-1&#34;&gt;HTML 标签入门笔记 1&lt;/h1&gt;
 
-&lt;h2 id=&#34;html页面起始&#34;&gt;html页面起始&lt;/h2&gt;
+&lt;h2 id=&#34;html-发明者&#34;&gt;HTML 发明者&lt;/h2&gt;
+
+&lt;p&gt;是由蒂姆·伯纳斯-李 90 年左右创造发明的，发明了一套 html,url,http 规则。&lt;/p&gt;
+
+&lt;h2 id=&#34;html-页面起手需要写的格式&#34;&gt;HTML 页面起手需要写的格式&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;!-- 文档类型 --&amp;gt;
@@ -107,7 +87,7 @@
 
 &lt;p&gt;旁支内容 aside&lt;/p&gt;
 
-&lt;p&gt;划分div&lt;/p&gt;
+&lt;p&gt;划分 div&lt;/p&gt;
 
 &lt;h2 id=&#34;全局属性&#34;&gt;全局属性&lt;/h2&gt;
 
@@ -119,17 +99,17 @@
 
 &lt;p&gt;hidden 隐藏属性&lt;/p&gt;
 
-&lt;p&gt;id 不到万不得已，不要使用，因为有2个标签id值都一样，也不会报错&lt;/p&gt;
+&lt;p&gt;id 不到万不得已，不要使用，因为有 2 个标签 id 值都一样，也不会报错&lt;/p&gt;
 
 &lt;p&gt;style 样式属性&lt;/p&gt;
 
-&lt;p&gt;tabindex 可以使用tab键，上下移动。数值为0时，表示最后访问。为-1表示永远访问不到&lt;/p&gt;
+&lt;p&gt;tabindex 可以使用 tab 键，上下移动。数值为 0 时，表示最后访问。为-1 表示永远访问不到&lt;/p&gt;
 
 &lt;p&gt;title 显示内容的标签&lt;/p&gt;
 
 &lt;h2 id=&#34;默认样式&#34;&gt;默认样式&lt;/h2&gt;
 
-&lt;p&gt;html会自带一些样式。因为那时候还没有css，有些样式太难看，需要清楚样式。自定义一个cssreset.css,如下&lt;/p&gt;
+&lt;p&gt;html 会自带一些样式。因为那时候还没有 css，有些样式太难看，需要清楚样式。自定义一个 cssreset.css,如下&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;* {
   margin: 0;
@@ -176,13 +156,37 @@ table {
 
 &lt;p&gt;em 语气强调&lt;/p&gt;
 
-&lt;p&gt;strong  更加强烈的强调&lt;/p&gt;
+&lt;p&gt;strong 更加强烈的强调&lt;/p&gt;
 
-&lt;p&gt;code  保持字体的对齐&lt;/p&gt;
+&lt;p&gt;code 保持字体的对齐&lt;/p&gt;
 
 &lt;p&gt;quote 行内引用&lt;/p&gt;
 
-&lt;p&gt;blockquote  换行引用&lt;/p&gt;
+&lt;p&gt;blockquote 换行引用&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>github的使用</title>
+      <link>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 11 Aug 2019 14:32:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;github的使用&#34;&gt;github的使用&lt;/h2&gt;
+
+&lt;p&gt;使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你一个公钥确认身份
+    创建一个新的仓库，使用git remote add origin git@github.com:xxx/blog-demo01.git，添加一个远程仓库地址，git push -u origin master 把本地的仓库master分支推到远程仓库上的master分支。
+    有新的修改后，用git add 添加修改的文件，git commit -v 提交，最后git push 在推到远程仓库，同步。有时候别人修改了远程仓库，需要git pull，然后才能git push.
+    使用git clone 命令，可以下载远程仓库到本地。&lt;/p&gt;
+
+&lt;p&gt;搭建个人博客，需要先熟悉markdown基本语法。可以实现git+github+md+vscode实现博客的编写。yarn add global git-open，安装后使用git open 直接打开对应的参考，方便修改对应的blog.md.&lt;/p&gt;
+
+&lt;p&gt;也可以使用hugo来搭建一个个人博客。首先下载release版本。然后配置好path路径。如目录是software/hugo/hugo.exe，则配置path路径为software/hugo就可以了，在命令行输入hugo version，显示版本就安装成功了。
+安装hugo官网的7部步骤来，输入命令行。到最后的hugo命令时，还需要部署到github上。需要在生产的博客文件添加.gitignore文件，在里面输入/public/表示忽略public，里面的内容单独git init，git add ，git commit -v git remote add &amp;hellip;&amp;hellip;最后git push 上传到github仓库.hugo个人博客支持换主题，可以查找对应的换肤文档，来实现换主题功能。&lt;/p&gt;
 </description>
       
     </item>

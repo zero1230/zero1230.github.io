@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 11 Aug 2019 14:32:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Aug 2019 14:30:52 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>html标签入门笔记1</title>
+      <link>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 12 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</guid>
+      <description>HTML 标签入门笔记 1 HTML 发明者 是由蒂姆·伯纳斯-李 90 年左右创造发明的，发明了一套 html,url,http 规则。 HTML 页面起手需要写的格式 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!-- 文档类型 --&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;!-- 语言的标签，可</description>
+    </item>
     
     <item>
       <title>github的使用</title>
@@ -18,15 +27,6 @@
       
       <guid>http://localhost:1313/post/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
       <description>github的使用 使用远程仓库，需要先配置ssh。使用命令生产公钥和私钥，把公钥上传到github上，使用命令ssh -T git@github.com ，github会给你</description>
-    </item>
-    
-    <item>
-      <title>html标签入门</title>
-      <link>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/</guid>
-      <description>html标签入门 html页面起始 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!-- 文档类型 --&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;!-- 语言的标签，可以换成ch-ZN --&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt; &amp;lt;!-- 文件的字符编码 --&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt; &amp;lt;!-- 禁用缩放 --&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot;</description>
     </item>
     
     <item>
