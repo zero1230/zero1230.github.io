@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 16 Aug 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 14:30:52 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>html重点标签</title>
+      <link>http://localhost:1313/post/html%E9%87%8D%E7%82%B9%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sat, 17 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E9%87%8D%E7%82%B9%E6%A0%87%E7%AD%BE/</guid>
+      <description>html 重点标签 a 标签 属性 href 超链接 target href 超链接，取值可以有网站，如//google.com,也可以路径，比如/a/b/c,a/b/c,index.h</description>
+    </item>
     
     <item>
       <title>hugo博客搭建</title>

@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 16 Aug 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 14:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,146 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>html重点标签</title>
+      <link>http://localhost:1313/post/html%E9%87%8D%E7%82%B9%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sat, 17 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E9%87%8D%E7%82%B9%E6%A0%87%E7%AD%BE/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;html-重点标签&#34;&gt;html 重点标签&lt;/h1&gt;
+
+&lt;h2 id=&#34;a-标签&#34;&gt;a 标签&lt;/h2&gt;
+
+&lt;h3 id=&#34;属性&#34;&gt;属性&lt;/h3&gt;
+
+&lt;p&gt;href 超链接&lt;/p&gt;
+
+&lt;p&gt;target&lt;/p&gt;
+
+&lt;p&gt;href 超链接，取值可以有网站，如//google.com,也可以路径，比如/a/b/c,a/b/c,index.html，./index.html,也可以伪协议，javascript：代码; mailto:邮箱地址，表示跳转邮箱。跳转电话为 tel:13xx&amp;hellip;,也能跳转到知道 id 位置，#id 名称.&lt;/p&gt;
+
+&lt;p&gt;target 取值。
+_blank 表示跳转到新的页面。 _self 表示在当前页面打开。_top 表示在最顶层打开。_parent 表示在当前页面的上一层页面打开。
+target 取值为“xxx”时候，会在当前页面打开,window.name 可以知道该页面的 name 为 xxx,也可以指定 iframe 的 name 为 xxx 时，target 的值为 xxx 时，会在 iframe 页面打开网页。&lt;/p&gt;
+
+&lt;h2 id=&#34;table-标签&#34;&gt;table 标签&lt;/h2&gt;
+
+&lt;p&gt;table 标签相关是&lt;/p&gt;
+
+&lt;p&gt;table&lt;/p&gt;
+
+&lt;p&gt;thead&lt;/p&gt;
+
+&lt;p&gt;tbody&lt;/p&gt;
+
+&lt;p&gt;tfoot&lt;/p&gt;
+
+&lt;p&gt;tr 行&lt;/p&gt;
+
+&lt;p&gt;th 表头&lt;/p&gt;
+
+&lt;p&gt;td 数据&lt;/p&gt;
+
+&lt;p&gt;相关样式
+table-layout
+border-collapse
+border-spacing&lt;/p&gt;
+
+&lt;p&gt;常用表格使用代码如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt;
+    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+    &amp;lt;style&amp;gt;
+      table {
+        width: 500px;
+        table-layout: auto;
+        border-spacing: 0px;
+        border-collapse: collapse;
+        border: 2px solid red;
+      }
+      th,
+      td {
+        border: 1px solid blue;
+      }
+    &amp;lt;/style&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;table&amp;gt;
+      &amp;lt;thead&amp;gt;
+        &amp;lt;tr&amp;gt;
+          &amp;lt;th&amp;gt;&amp;lt;/th&amp;gt;
+          &amp;lt;th&amp;gt;小明&amp;lt;/th&amp;gt;
+          &amp;lt;th&amp;gt;小红&amp;lt;/th&amp;gt;
+          &amp;lt;th&amp;gt;小龙&amp;lt;/th&amp;gt;
+        &amp;lt;/tr&amp;gt;
+      &amp;lt;/thead&amp;gt;
+
+      &amp;lt;tbody&amp;gt;
+        &amp;lt;tr&amp;gt;
+          &amp;lt;th&amp;gt;语文&amp;lt;/th&amp;gt;
+          &amp;lt;td&amp;gt;90&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;82&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;77&amp;lt;/td&amp;gt;
+        &amp;lt;/tr&amp;gt;
+        &amp;lt;tr&amp;gt;
+          &amp;lt;th&amp;gt;数学&amp;lt;/th&amp;gt;
+          &amp;lt;td&amp;gt;90&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;82&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;67&amp;lt;/td&amp;gt;
+        &amp;lt;/tr&amp;gt;
+        &amp;lt;tr&amp;gt;
+          &amp;lt;th&amp;gt;英语&amp;lt;/th&amp;gt;
+          &amp;lt;td&amp;gt;92&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;72&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;77&amp;lt;/td&amp;gt;
+        &amp;lt;/tr&amp;gt;
+      &amp;lt;/tbody&amp;gt;
+      &amp;lt;tfoot&amp;gt;
+        &amp;lt;tr&amp;gt;
+          &amp;lt;th&amp;gt;合计&amp;lt;/th&amp;gt;
+          &amp;lt;td&amp;gt;200&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;200&amp;lt;/td&amp;gt;
+          &amp;lt;td&amp;gt;200&amp;lt;/td&amp;gt;
+        &amp;lt;/tr&amp;gt;
+      &amp;lt;/tfoot&amp;gt;
+    &amp;lt;/table&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;img-标签&#34;&gt;img 标签&lt;/h2&gt;
+
+&lt;h3 id=&#34;作用&#34;&gt;作用&lt;/h3&gt;
+
+&lt;p&gt;发出 get 请求，展示一张图片&lt;/p&gt;
+
+&lt;h3 id=&#34;属性-1&#34;&gt;属性&lt;/h3&gt;
+
+&lt;p&gt;alt /height 图片高度/width 图片宽度/src 图片来源路径&lt;/p&gt;
+
+&lt;h3 id=&#34;事件&#34;&gt;事件&lt;/h3&gt;
+
+&lt;p&gt;onload 图片成功加载的事件/ onerror 图片失败加载的事件&lt;/p&gt;
+
+&lt;h3 id=&#34;响应式&#34;&gt;响应式&lt;/h3&gt;
+
+&lt;p&gt;max-width:100% 添加后，可以在手机上也能适配&lt;/p&gt;
+
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+
+&lt;p&gt;使用标签，需要多写相关标签，多练才能熟悉用法。写的页面，不能直接打开文件，而是可以使用命令打开，如 http-serve . -c-1 命令打开。&lt;/p&gt;
 </description>
       
     </item>
