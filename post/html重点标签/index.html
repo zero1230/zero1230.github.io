@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-08-17T14:30:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-08-17T14:30:52&#43;08:00" />
-<meta itemprop="wordCount" content="730">
+<meta itemprop="wordCount" content="1018">
 
 
 
@@ -376,6 +376,19 @@
 <li><a href="#事件">事件</a></li>
 <li><a href="#响应式">响应式</a></li>
 </ul></li>
+<li><a href="#form-标签">form 标签</a>
+<ul>
+<li><a href="#作用-发-get-或-post-请求-然后刷新页面">作用：发 get 或 post 请求，然后刷新页面。</a></li>
+<li><a href="#属性-2">属性</a></li>
+<li><a href="#事件-1">事件</a></li>
+</ul></li>
+<li><a href="#input-标签">input 标签</a>
+<ul>
+<li><a href="#作用-1">作用</a></li>
+<li><a href="#属性-3">属性</a></li>
+<li><a href="#事件-2">事件</a></li>
+<li><a href="#验证器">验证器</a></li>
+</ul></li>
 <li><a href="#总结">总结</a></li>
 </ul></li>
 </ul>
@@ -510,6 +523,76 @@ border-spacing</p>
 <h3 id="响应式">响应式</h3>
 
 <p>max-width:100% 添加后，可以在手机上也能适配</p>
+
+<h2 id="form-标签">form 标签</h2>
+
+<h3 id="作用-发-get-或-post-请求-然后刷新页面">作用：发 get 或 post 请求，然后刷新页面。</h3>
+
+<h3 id="属性-2">属性</h3>
+
+<p>action 发送的地址/autocomplete/method 发送方式/target 提交哪个页面</p>
+
+<h3 id="事件-1">事件</h3>
+
+<p>onsubmit 只有含 submit 的标签才能触发事件</p>
+
+<h2 id="input-标签">input 标签</h2>
+
+<h3 id="作用-1">作用</h3>
+
+<p>让用户输入内容</p>
+
+<h3 id="属性-3">属性</h3>
+
+<p>type:button/checkbox/email/file/hidden/number/password/radio/search/submit/tel</p>
+
+<p>其他 name/autofocus/checked/disabled/maxlength/pattern/value/placeholder</p>
+
+<h3 id="事件-2">事件</h3>
+
+<p>onchange/onfocus/onblur</p>
+
+<h3 id="验证器">验证器</h3>
+
+<p>Html5 新功能，可以在 input 属性中加入 require 验证等</p>
+
+<p>常用代码例子</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action=&quot;/xxx&quot; method=&quot;POST&quot; autocomplete=&quot;on&quot; target=&quot;_blank&quot;&gt;
+      &lt;input type=&quot;text&quot; name=&quot;user&quot; /&gt;
+      &lt;input type=&quot;submit&quot; /&gt;
+      &lt;hr /&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt;male
+      &lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt;female
+      &lt;hr /&gt;
+      &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; /&gt;basket
+      &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; /&gt;foot
+      &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot; /&gt;table
+      &lt;hr /&gt;
+      &lt;textarea
+        name=&quot;text&quot;
+        style=&quot;resize: none ;width:100px;&quot;
+        cols=&quot;30&quot;
+        rows=&quot;10&quot;
+      &gt;&lt;/textarea&gt;
+      &lt;hr /&gt;
+      &lt;select name=&quot;date&quot; id=&quot;&quot;&gt;
+        &lt;option value=&quot;1&quot;&gt;星期一&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;星期二&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 
 <h2 id="总结">总结</h2>
 

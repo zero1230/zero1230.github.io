@@ -167,6 +167,76 @@ border-spacing&lt;/p&gt;
 
 &lt;p&gt;max-width:100% 添加后，可以在手机上也能适配&lt;/p&gt;
 
+&lt;h2 id=&#34;form-标签&#34;&gt;form 标签&lt;/h2&gt;
+
+&lt;h3 id=&#34;作用-发-get-或-post-请求-然后刷新页面&#34;&gt;作用：发 get 或 post 请求，然后刷新页面。&lt;/h3&gt;
+
+&lt;h3 id=&#34;属性-2&#34;&gt;属性&lt;/h3&gt;
+
+&lt;p&gt;action 发送的地址/autocomplete/method 发送方式/target 提交哪个页面&lt;/p&gt;
+
+&lt;h3 id=&#34;事件-1&#34;&gt;事件&lt;/h3&gt;
+
+&lt;p&gt;onsubmit 只有含 submit 的标签才能触发事件&lt;/p&gt;
+
+&lt;h2 id=&#34;input-标签&#34;&gt;input 标签&lt;/h2&gt;
+
+&lt;h3 id=&#34;作用-1&#34;&gt;作用&lt;/h3&gt;
+
+&lt;p&gt;让用户输入内容&lt;/p&gt;
+
+&lt;h3 id=&#34;属性-3&#34;&gt;属性&lt;/h3&gt;
+
+&lt;p&gt;type:button/checkbox/email/file/hidden/number/password/radio/search/submit/tel&lt;/p&gt;
+
+&lt;p&gt;其他 name/autofocus/checked/disabled/maxlength/pattern/value/placeholder&lt;/p&gt;
+
+&lt;h3 id=&#34;事件-2&#34;&gt;事件&lt;/h3&gt;
+
+&lt;p&gt;onchange/onfocus/onblur&lt;/p&gt;
+
+&lt;h3 id=&#34;验证器&#34;&gt;验证器&lt;/h3&gt;
+
+&lt;p&gt;Html5 新功能，可以在 input 属性中加入 require 验证等&lt;/p&gt;
+
+&lt;p&gt;常用代码例子&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt;
+    &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt;
+    &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt;
+    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;form action=&amp;quot;/xxx&amp;quot; method=&amp;quot;POST&amp;quot; autocomplete=&amp;quot;on&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;
+      &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;user&amp;quot; /&amp;gt;
+      &amp;lt;input type=&amp;quot;submit&amp;quot; /&amp;gt;
+      &amp;lt;hr /&amp;gt;
+      &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;gender&amp;quot; /&amp;gt;male
+      &amp;lt;input type=&amp;quot;radio&amp;quot; name=&amp;quot;gender&amp;quot; /&amp;gt;female
+      &amp;lt;hr /&amp;gt;
+      &amp;lt;input type=&amp;quot;checkbox&amp;quot; name=&amp;quot;hobby&amp;quot; /&amp;gt;basket
+      &amp;lt;input type=&amp;quot;checkbox&amp;quot; name=&amp;quot;hobby&amp;quot; /&amp;gt;foot
+      &amp;lt;input type=&amp;quot;checkbox&amp;quot; name=&amp;quot;hobby&amp;quot; /&amp;gt;table
+      &amp;lt;hr /&amp;gt;
+      &amp;lt;textarea
+        name=&amp;quot;text&amp;quot;
+        style=&amp;quot;resize: none ;width:100px;&amp;quot;
+        cols=&amp;quot;30&amp;quot;
+        rows=&amp;quot;10&amp;quot;
+      &amp;gt;&amp;lt;/textarea&amp;gt;
+      &amp;lt;hr /&amp;gt;
+      &amp;lt;select name=&amp;quot;date&amp;quot; id=&amp;quot;&amp;quot;&amp;gt;
+        &amp;lt;option value=&amp;quot;1&amp;quot;&amp;gt;星期一&amp;lt;/option&amp;gt;
+        &amp;lt;option value=&amp;quot;2&amp;quot;&amp;gt;星期二&amp;lt;/option&amp;gt;
+      &amp;lt;/select&amp;gt;
+    &amp;lt;/form&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
 
 &lt;p&gt;使用标签，需要多写相关标签，多练才能熟悉用法。写的页面，不能直接打开文件，而是可以使用命令打开，如 http-serve . -c-1 命令打开。&lt;/p&gt;
