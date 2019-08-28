@@ -599,5 +599,37 @@ public class OperateClass {
       
     </item>
     
+    <item>
+      <title>浅析URL</title>
+      <link>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;浅析-url&#34;&gt;浅析 URL&lt;/h1&gt;
+
+&lt;h2 id=&#34;url-构成部分&#34;&gt;URL 构成部分&lt;/h2&gt;
+
+&lt;p&gt;协议+域名或 IP+端口号+路径+查询字符串+锚点
+URL 举例：
+&lt;a href=&#34;https://www.baidu.com/s?wd=hello&amp;amp;rsv_spt=10#5&#34;&gt;https://www.baidu.com/s?wd=hello&amp;amp;rsv_spt=10#5&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;dns-的作用&#34;&gt;DNS 的作用&lt;/h2&gt;
+
+&lt;p&gt;可以解析域名，通过输入域名地址，会通过 dns 解析得到 IP 地址。可以使用 nslookup 域名地址来获取 IP 地址&lt;/p&gt;
+
+&lt;h2 id=&#34;ip-的作用&#34;&gt;IP 的作用&lt;/h2&gt;
+
+&lt;p&gt;IP 分为内网和外网。通过路由器划分内外网。IP 可以标示互联网上计算机的位置。可以使用 ping 网址，来获得对应的 IP 地址。&lt;/p&gt;
+
+&lt;h2 id=&#34;域名&#34;&gt;域名&lt;/h2&gt;
+
+&lt;p&gt;域名就是对 IP 的别称。一个域名可以对应不同 IP,这叫负载均衡。一个 IP 可以对应不同域名，这叫主机共享。域名有以下分类。com，org 之类是顶级域名、baidu.com 为 2 级域名、www.baidu.com 为三级域名。&lt;/p&gt;
+</description>
+      
+    </item>
+    
   </channel>
 </rss>

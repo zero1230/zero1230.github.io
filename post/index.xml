@@ -65,5 +65,14 @@
       <description>自定义栈 代码如下 public class MyStack&amp;lt;E&amp;gt; { private int top=-1; private Object[] stack; public MyStack(){ stack=new Object[10]; } public boolean isEmpty(){ return top==-1; } public E push(E item){ stack[++top]=item; return item; } public E peek(){ if(isEmpty()){ return null; } return (E)stack[top]; } public E pop(){ E e = peek(); stack[top]=null; top--; return e; } /* * 栈满扩容 * * */ public void</description>
     </item>
     
+    <item>
+      <title>浅析URL</title>
+      <link>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%85%E6%9E%90url/</guid>
+      <description>浅析 URL URL 构成部分 协议+域名或 IP+端口号+路径+查询字符串+锚点 URL 举例： https://www.baidu.com/s?wd=hello&amp;amp;rsv_spt=10#5 DNS 的作用 可以解析域名，通过输入域名地址，会通过 dns 解析得到 IP 地址。可</description>
+    </item>
+    
   </channel>
 </rss>
