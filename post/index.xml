@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 17 Aug 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 14:30:52 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Css布局flex与grid</title>
+      <link>http://localhost:1313/post/css%E5%B8%83%E5%B1%80flex%E5%92%8Cgrid/</link>
+      <pubDate>Sat, 31 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/css%E5%B8%83%E5%B1%80flex%E5%92%8Cgrid/</guid>
+      <description>flex 布局 常用代码 display:flex; flex-direction:row/column; flex-wrap:wrap; justify-content:center/space-between; align-items:center; flex 布局小案例 html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;title&amp;gt;JS Bin&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;header&amp;gt; &amp;lt;div class=&amp;quot;logo&amp;quot;&amp;gt; &amp;lt;img src=&amp;quot;https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png&amp;quot; alt=&amp;quot;&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;首页&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;</description>
+    </item>
     
     <item>
       <title>html重点标签</title>

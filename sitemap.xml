@@ -9,14 +9,21 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/css%E5%B8%83%E5%B1%80flex%E5%92%8Cgrid/</loc>
+    <lastmod>2019-08-31T14:30:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2019-08-17T14:30:52+08:00</lastmod>
+    <lastmod>2019-08-31T14:30:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-08-17T14:30:52+08:00</lastmod>
+    <lastmod>2019-08-31T14:30:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
