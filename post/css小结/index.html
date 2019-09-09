@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>JavaScript 的诞生 - My Blog</title>
+  <title>CSS 知识总结 - My Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="zero1230" />
-  <meta name="description" content="JavaScript 的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。 Netscape 公司发现，Navigator 浏览器需要一种可以嵌入网页的脚本语言，用来控制浏览器行为。" />
+  <meta name="description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.56.3" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/javascript-%E7%9A%84%E8%AF%9E%E7%94%9F/" />
+<link rel="canonical" href="http://localhost:1313/post/css%E5%B0%8F%E7%BB%93/" />
 
 
 
@@ -57,26 +57,26 @@
 
 
 
-<meta property="og:title" content="JavaScript 的诞生" />
-<meta property="og:description" content="JavaScript 的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。 Netscape 公司发现，Navigator 浏览器需要一种可以嵌入网页的脚本语言，用来控制浏览器行为。" />
+<meta property="og:title" content="CSS 知识总结" />
+<meta property="og:description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/javascript-%E7%9A%84%E8%AF%9E%E7%94%9F/" />
-<meta property="article:published_time" content="2019-09-01T14:30:52+08:00" />
-<meta property="article:modified_time" content="2019-09-01T14:30:52+08:00" />
-<meta itemprop="name" content="JavaScript 的诞生">
-<meta itemprop="description" content="JavaScript 的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。 Netscape 公司发现，Navigator 浏览器需要一种可以嵌入网页的脚本语言，用来控制浏览器行为。">
+<meta property="og:url" content="http://localhost:1313/post/css%E5%B0%8F%E7%BB%93/" />
+<meta property="article:published_time" content="2019-09-08T14:30:52+08:00" />
+<meta property="article:modified_time" content="2019-09-08T14:30:52+08:00" />
+<meta itemprop="name" content="CSS 知识总结">
+<meta itemprop="description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布">
 
 
-<meta itemprop="datePublished" content="2019-09-01T14:30:52&#43;08:00" />
-<meta itemprop="dateModified" content="2019-09-01T14:30:52&#43;08:00" />
-<meta itemprop="wordCount" content="506">
+<meta itemprop="datePublished" content="2019-09-08T14:30:52&#43;08:00" />
+<meta itemprop="dateModified" content="2019-09-08T14:30:52&#43;08:00" />
+<meta itemprop="wordCount" content="702">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JavaScript 的诞生"/>
-<meta name="twitter:description" content="JavaScript 的诞生 JavaScript 因为互联网而生，紧随着浏览器的出现而问世。 Netscape 公司发现，Navigator 浏览器需要一种可以嵌入网页的脚本语言，用来控制浏览器行为。"/>
+<meta name="twitter:title" content="CSS 知识总结"/>
+<meta name="twitter:description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -338,11 +338,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">JavaScript 的诞生</h1>
+      <h1 class="post-title">CSS 知识总结</h1>
       
       <div class="post-meta">
-        <time datetime="2019-09-01" class="post-time">
-          2019-09-01
+        <time datetime="2019-09-08" class="post-time">
+          2019-09-08
         </time>
         
         
@@ -362,7 +362,20 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#javascript-的诞生">JavaScript 的诞生</a></li>
+<li><a href="#css-知识总结">CSS 知识总结</a>
+<ul>
+<li><a href="#浏览器渲染原理">浏览器渲染原理</a>
+<ul>
+<li><a href="#如何更新样式">如何更新样式</a></li>
+</ul></li>
+<li><a href="#css-动画的两种做法">CSS 动画的两种做法</a>
+<ul>
+<li><a href="#1-transition-过渡">1.transition 过渡</a></li>
+<li><a href="#2-animation">2.animation</a></li>
+<li><a href="#3-画一个跳动的红心来实践下">3.画一个跳动的红心来实践下</a></li>
+</ul></li>
+<li><a href="#总结">总结</a></li>
+</ul></li>
 </ul>
 </nav>
   </div>
@@ -372,19 +385,125 @@
     <div class="post-content">
       
 
-<h1 id="javascript-的诞生">JavaScript 的诞生</h1>
+<h1 id="css-知识总结">CSS 知识总结</h1>
 
-<p>JavaScript 因为互联网而生，紧随着浏览器的出现而问世。</p>
+<h2 id="浏览器渲染原理">浏览器渲染原理</h2>
 
-<p>Netscape 公司发现，Navigator 浏览器需要一种可以嵌入网页的脚本语言，用来控制浏览器行为。当时，网速很慢而且上网费很贵，有些操作不宜在服务器端完成。这就需要在网页中嵌入小程序，让浏览器检查。</p>
+<pre><code>主要有如下步骤
+1.根据HTML构建HTML树
+2.根据CSS构建CSS树
+3.将两颗树合并成一颗渲染树
+4.Layout布局（文档流，盒模型，计算大小和位置）
+5.Paint绘制（边框颜色，文字颜色，阴影等画出来）
+6.Compose合成（根据层叠关系展示画面）
+</code></pre>
 
-<p>管理层对这种浏览器脚本语言的设想是：功能不需要太强，语法较为简单，容易学习和部署。那一年，正逢 Java 语言开始推向市场，Netscape 公司决定，脚本语言的语法要接近 Java，并且可以支持 Java 程序。这些设想直接排除了使用现存语言，比如 perl、python 和 TCL。</p>
+<h3 id="如何更新样式">如何更新样式</h3>
 
-<p>1995 年，Netscape 公司雇佣了程序员 Brendan Eich 开发这种网页脚本语言。Brendan Eich 有很强的函数式编程背景，希望以 Scheme 语言为蓝本，实现这种新语言。</p>
+<pre><code>一般使用JS来更新样式，有三种更新方式
+1.全走，如div.remove()会触发当前消失，其他元素relayout
+2.第二种，跳过layout 改变背景色，只需composite
+3.跳过layout和paint 改变transfrom,只需composite
+</code></pre>
 
-<p>1995 年 5 月，Brendan Eich 只用了 10 天，就设计完成了这种语言的第一版。它是一个大杂烩，语法有多个来源。</p>
+<h2 id="css-动画的两种做法">CSS 动画的两种做法</h2>
 
-<p>Netscape 公司的这种浏览器脚本语言，最初名字叫做 Mocha，1995 年 9 月改为 LiveScript。12 月，Netscape 公司与 Sun 公司达成协议，后者允许将这种语言叫做 JavaScript。这样一来，Netscape 公司可以借助 Java 语言的声势，而 Sun 公司则将自己的影响力扩展到了浏览器。</p>
+<h3 id="1-transition-过渡">1.transition 过渡</h3>
+
+<p>作用:补充中间帧
+语法:</p>
+
+<pre><code>transition:属性名(如width,all) 时长(1000ms) 过渡方式(linear|ease) 延迟
+</code></pre>
+
+<p>注意：不是所有属性都能过渡，如 display:none=&gt;block 无法过渡</p>
+
+<h3 id="2-animation">2.animation</h3>
+
+<p>声明关键帧</p>
+
+<p>添加动画</p>
+
+<p>使用写法如下</p>
+
+<pre><code>@keyframes xxx{
+    0%{transform:scale(1)}
+    100%{transform:scale(1.2)}
+}
+
+</code></pre>
+
+<p>animation 缩写语法:时长(1s 或者 1000ms)|过渡方式(linear)|延迟|次数(infinite)|方向(reverse|alternative|alternative-reverse)|填充模式(none|forwards|backwards)|是否暂停(paused|running)|动画名;</p>
+
+<h3 id="3-画一个跳动的红心来实践下">3.画一个跳动的红心来实践下</h3>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+      #heart {
+        margin: 300px;
+        position: relative;
+        display: inline-block;
+        animation: hear 1000ms infinite alternate-reverse linear;
+        /* transition: all 1s; */
+      }
+      /* #heart:hover {
+        transform: scale(0.5);
+      } */
+
+      @keyframes hear {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.2);
+        }
+      }
+
+      .left {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transform: rotate(45deg) translate(-80px, 0px);
+        border-radius: 50% 0 0 50%;
+      }
+      .right {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transform: rotate(45deg) translate(0px, -80px);
+        border-radius: 50% 50% 0% 0%;
+      }
+      .bottom {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        transform: rotate(45deg);
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;heart&quot;&gt;
+      &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
+      &lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<h2 id="总结">总结</h2>
+
+<p>css 的知识需要自己不断实践练习才能掌握了解。</p>
 
     </div>
 
@@ -398,7 +517,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2019-09-01
+      2019-09-08
       
     </span>
   </p>
@@ -419,22 +538,9 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/css%E5%B0%8F%E7%BB%93/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">CSS 知识总结</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/css%E5%B8%83%E5%B1%80flex%E5%92%8Cgrid/">
-            <span class="next-text nav-default">Css布局flex与grid</span>
+          <a class="next" href="/post/javascript-%E7%9A%84%E8%AF%9E%E7%94%9F/">
+            <span class="next-text nav-default">JavaScript 的诞生</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">
