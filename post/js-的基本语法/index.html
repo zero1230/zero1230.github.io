@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CSS 知识总结 - My Blog</title>
+  <title>JS 的基本语法 - My Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="zero1230" />
-  <meta name="description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布" />
+  <meta name="description" content="JS 的基本语法 表达式与语句 表达式 1&#43;2 表达式的值为 3 add(1,2)表达式的值为函数的返回值 语句 var a =1 是一个语句 二者的区别 表达式一般都有值，语句有" />
 
   <meta name="keywords" content="Hugo, theme, jane" />
 
@@ -35,7 +35,7 @@
 <meta name="generator" content="Hugo 0.56.3" />
 
 
-<link rel="canonical" href="http://localhost:1313/post/css%E5%B0%8F%E7%BB%93/" />
+<link rel="canonical" href="http://localhost:1313/post/js-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
 
 
 
@@ -57,26 +57,26 @@
 
 
 
-<meta property="og:title" content="CSS 知识总结" />
-<meta property="og:description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布" />
+<meta property="og:title" content="JS 的基本语法" />
+<meta property="og:description" content="JS 的基本语法 表达式与语句 表达式 1&#43;2 表达式的值为 3 add(1,2)表达式的值为函数的返回值 语句 var a =1 是一个语句 二者的区别 表达式一般都有值，语句有" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/post/css%E5%B0%8F%E7%BB%93/" />
-<meta property="article:published_time" content="2019-09-08T14:30:52+08:00" />
-<meta property="article:modified_time" content="2019-09-08T14:30:52+08:00" />
-<meta itemprop="name" content="CSS 知识总结">
-<meta itemprop="description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布">
+<meta property="og:url" content="http://localhost:1313/post/js-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/" />
+<meta property="article:published_time" content="2019-09-11T12:30:52+08:00" />
+<meta property="article:modified_time" content="2019-09-11T12:30:52+08:00" />
+<meta itemprop="name" content="JS 的基本语法">
+<meta itemprop="description" content="JS 的基本语法 表达式与语句 表达式 1&#43;2 表达式的值为 3 add(1,2)表达式的值为函数的返回值 语句 var a =1 是一个语句 二者的区别 表达式一般都有值，语句有">
 
 
-<meta itemprop="datePublished" content="2019-09-08T14:30:52&#43;08:00" />
-<meta itemprop="dateModified" content="2019-09-08T14:30:52&#43;08:00" />
-<meta itemprop="wordCount" content="702">
+<meta itemprop="datePublished" content="2019-09-11T12:30:52&#43;08:00" />
+<meta itemprop="dateModified" content="2019-09-11T12:30:52&#43;08:00" />
+<meta itemprop="wordCount" content="645">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CSS 知识总结"/>
-<meta name="twitter:description" content="CSS 知识总结 浏览器渲染原理 主要有如下步骤 1.根据HTML构建HTML树 2.根据CSS构建CSS树 3.将两颗树合并成一颗渲染树 4.Layout布"/>
+<meta name="twitter:title" content="JS 的基本语法"/>
+<meta name="twitter:description" content="JS 的基本语法 表达式与语句 表达式 1&#43;2 表达式的值为 3 add(1,2)表达式的值为函数的返回值 语句 var a =1 是一个语句 二者的区别 表达式一般都有值，语句有"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -338,11 +338,11 @@
           <article class="post bg-white">
     
     <header class="post-header">
-      <h1 class="post-title">CSS 知识总结</h1>
+      <h1 class="post-title">JS 的基本语法</h1>
       
       <div class="post-meta">
-        <time datetime="2019-09-08" class="post-time">
-          2019-09-08
+        <time datetime="2019-09-11" class="post-time">
+          2019-09-11
         </time>
         
         
@@ -362,19 +362,42 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#css-知识总结">CSS 知识总结</a>
+<li><a href="#js-的基本语法">JS 的基本语法</a>
 <ul>
-<li><a href="#浏览器渲染原理">浏览器渲染原理</a>
+<li><a href="#表达式与语句">表达式与语句</a>
 <ul>
-<li><a href="#如何更新样式">如何更新样式</a></li>
+<li><a href="#表达式">表达式</a></li>
+<li><a href="#语句">语句</a></li>
+<li><a href="#二者的区别">二者的区别</a></li>
 </ul></li>
-<li><a href="#css-动画的两种做法">CSS 动画的两种做法</a>
+<li><a href="#标识符">标识符</a>
 <ul>
-<li><a href="#1-transition-过渡">1.transition 过渡</a></li>
-<li><a href="#2-animation">2.animation</a></li>
-<li><a href="#3-画一个跳动的红心来实践下">3.画一个跳动的红心来实践下</a></li>
+<li><a href="#规则">规则</a></li>
+<li><a href="#常用标识符举例">常用标识符举例</a></li>
 </ul></li>
-<li><a href="#总结">总结</a></li>
+<li><a href="#if-语句">if 语句</a>
+<ul>
+<li><a href="#语法">语法</a></li>
+<li><a href="#变态情况">变态情况</a></li>
+</ul></li>
+<li><a href="#switch-语句">switch 语句</a>
+<ul>
+<li><a href="#语法-1">语法</a></li>
+<li><a href="#break-注意事项">break 注意事项</a></li>
+<li><a href="#while-循环">while 循环</a></li>
+<li><a href="#语法-2">语法</a></li>
+</ul></li>
+<li><a href="#for-循环">for 循环</a>
+<ul>
+<li><a href="#语法糖">语法糖</a></li>
+<li><a href="#语法-3">语法</a></li>
+</ul></li>
+<li><a href="#break-和-continue">break 和 continue</a></li>
+<li><a href="#label-语句">label 语句</a>
+<ul>
+<li><a href="#语法-4">语法</a></li>
+<li><a href="#面试题">面试题</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -385,125 +408,145 @@
     <div class="post-content">
       
 
-<h1 id="css-知识总结">CSS 知识总结</h1>
+<h1 id="js-的基本语法">JS 的基本语法</h1>
 
-<h2 id="浏览器渲染原理">浏览器渲染原理</h2>
+<h2 id="表达式与语句">表达式与语句</h2>
 
-<pre><code>主要有如下步骤
-1.根据HTML构建HTML树
-2.根据CSS构建CSS树
-3.将两颗树合并成一颗渲染树
-4.Layout布局（文档流，盒模型，计算大小和位置）
-5.Paint绘制（边框颜色，文字颜色，阴影等画出来）
-6.Compose合成（根据层叠关系展示画面）
-</code></pre>
+<h3 id="表达式">表达式</h3>
 
-<h3 id="如何更新样式">如何更新样式</h3>
+<ul>
+<li>1+2 表达式的值为 3</li>
+<li>add(1,2)表达式的值为函数的返回值</li>
+</ul>
 
-<pre><code>一般使用JS来更新样式，有三种更新方式
-1.全走，如div.remove()会触发当前消失，其他元素relayout
-2.第二种，跳过layout 改变背景色，只需composite
-3.跳过layout和paint 改变transfrom,只需composite
-</code></pre>
+<h3 id="语句">语句</h3>
 
-<h2 id="css-动画的两种做法">CSS 动画的两种做法</h2>
+<ul>
+<li>var a =1 是一个语句</li>
+</ul>
 
-<h3 id="1-transition-过渡">1.transition 过渡</h3>
+<h3 id="二者的区别">二者的区别</h3>
 
-<p>作用:补充中间帧
-语法:</p>
+<ul>
+<li>表达式一般都有值，语句有也可能没有</li>
+<li>语句一般会改变环境(声明，赋值)</li>
+<li>上面两句话不是绝对的</li>
+</ul>
 
-<pre><code>transition:属性名(如width,all) 时长(1000ms) 过渡方式(linear|ease) 延迟
-</code></pre>
+<h2 id="标识符">标识符</h2>
 
-<p>注意：不是所有属性都能过渡，如 display:none=&gt;block 无法过渡</p>
+<h3 id="规则">规则</h3>
 
-<h3 id="2-animation">2.animation</h3>
+<ul>
+<li>第一个字符可以是 Unicode 字母或者\$或_或中文</li>
+<li>后面的字符，除上面所说，还可以有数字</li>
+</ul>
 
-<p>声明关键帧</p>
+<h3 id="常用标识符举例">常用标识符举例</h3>
 
-<p>添加动画</p>
+<ul>
+<li>var_</li>
+<li>\$var</li>
+<li>var3</li>
+<li>pic_name</li>
+</ul>
 
-<p>使用写法如下</p>
+<h2 id="if-语句">if 语句</h2>
 
-<pre><code>@keyframes xxx{
-    0%{transform:scale(1)}
-    100%{transform:scale(1.2)}
+<h3 id="语法">语法</h3>
+
+<ul>
+<li>if(表达式){语句 1}else{语句 2}</li>
+<li>{}在语句只有一句的时候可以省略，不建议这样做</li>
+</ul>
+
+<h3 id="变态情况">变态情况</h3>
+
+<ul>
+<li>表达式里可以非常变态，如 a=1</li>
+<li>语句 1 里可以非常变态，如嵌套的 if else</li>
+<li>语句 2 里可以非常变态，如嵌套的 if else</li>
+
+<li><p>缩进也可以很变态，如面试题常常下套</p>
+
+<pre><code>a=1
+if(a===2)
+console.log('a')
+console.log('a等于2')
+//只打印a等于2，第2行的缩进可以打任意空格
+</code></pre></li>
+</ul>
+
+<h2 id="switch-语句">switch 语句</h2>
+
+<h3 id="语法-1">语法</h3>
+
+<pre><code>switch(fruit){
+    case &quot;banana&quot;:
+        //...
+        break;
+    case &quot;apple&quot;:
+        //...
+        break;
+    default:
+        //...
 }
-
 </code></pre>
 
-<p>animation 缩写语法:时长(1s 或者 1000ms)|过渡方式(linear)|延迟|次数(infinite)|方向(reverse|alternative|alternative-reverse)|填充模式(none|forwards|backwards)|是否暂停(paused|running)|动画名;</p>
+<h3 id="break-注意事项">break 注意事项</h3>
 
-<h3 id="3-画一个跳动的红心来实践下">3.画一个跳动的红心来实践下</h3>
+<ul>
+<li>大部分时候，省略 break 就完了，case 会穿透，执行多个 case 语句，直到 break 才结束执行</li>
+<li>少部分时候，可以利用 break</li>
+</ul>
 
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;style&gt;
-      #heart {
-        margin: 300px;
-        position: relative;
-        display: inline-block;
-        animation: hear 1000ms infinite alternate-reverse linear;
-        /* transition: all 1s; */
-      }
-      /* #heart:hover {
-        transform: scale(0.5);
-      } */
+<h3 id="while-循环">while 循环</h3>
 
-      @keyframes hear {
-        0% {
-          transform: scale(1);
-        }
-        100% {
-          transform: scale(1.2);
-        }
-      }
+<h3 id="语法-2">语法</h3>
 
-      .left {
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        background-color: red;
-        transform: rotate(45deg) translate(-80px, 0px);
-        border-radius: 50% 0 0 50%;
-      }
-      .right {
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        background-color: red;
-        transform: rotate(45deg) translate(0px, -80px);
-        border-radius: 50% 50% 0% 0%;
-      }
-      .bottom {
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        background-color: red;
-        transform: rotate(45deg);
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;div id=&quot;heart&quot;&gt;
-      &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;right&quot;&gt;&lt;/div&gt;
-      &lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<ul>
+<li>while(表达式){语句}</li>
+<li>判断表达式的真假</li>
+<li>当表达式为真，执行语句，执行完在判断表达式的真假</li>
+<li>当表达式为假，执行后面的语句</li>
+</ul>
 
+<h2 id="for-循环">for 循环</h2>
+
+<h3 id="语法糖">语法糖</h3>
+
+<p>-for 是 while 循环的方便写法</p>
+
+<h3 id="语法-3">语法</h3>
+
+<ul>
+<li>for(语句 1:表达式 2;语句 3){循环体}</li>
+<li>先执行语句 1</li>
+<li>如果为真，执行循环体，然后执行语句 3</li>
+<li>如果为假，直接退出循环，执行后面的语句</li>
+</ul>
+
+<h2 id="break-和-continue">break 和 continue</h2>
+
+<p>break 在循环中，退出所有的循环。而 continue 则是退出当前的循环，后面的代码不执行，执行后面的循环。</p>
+
+<h2 id="label-语句">label 语句</h2>
+
+<h3 id="语法-4">语法</h3>
+
+<pre><code>foo:{
+    console.log(1);
+    break foo;
+    console.log('本行不会输出');
+}
 </code></pre>
 
-<h2 id="总结">总结</h2>
+<h3 id="面试题">面试题</h3>
 
-<p>css 的知识需要自己不断实践练习才能掌握了解。</p>
+<pre><code>{foo:1}
+</code></pre>
+
+<p>在 chorme 浏览器中是一个对象，在火狐浏览器中则是一个标签，值为 1</p>
 
     </div>
 
@@ -517,7 +560,7 @@
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-      2019-09-08
+      2019-09-11
       
     </span>
   </p>
@@ -538,22 +581,9 @@
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/js-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">JS 的基本语法</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/javascript-%E7%9A%84%E8%AF%9E%E7%94%9F/">
-            <span class="next-text nav-default">JavaScript 的诞生</span>
+          <a class="next" href="/post/css%E5%B0%8F%E7%BB%93/">
+            <span class="next-text nav-default">CSS 知识总结</span>
             <span class="prev-text nav-mobile">下一篇</span>
             
             <i class="iconfont">

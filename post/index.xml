@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Sep 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Sep 2019 12:30:52 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS 的基本语法</title>
+      <link>http://localhost:1313/post/js-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Wed, 11 Sep 2019 12:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <description>JS 的基本语法 表达式与语句 表达式 1+2 表达式的值为 3 add(1,2)表达式的值为函数的返回值 语句 var a =1 是一个语句 二者的区别 表达式一般都有值，语句有</description>
+    </item>
     
     <item>
       <title>CSS 知识总结</title>

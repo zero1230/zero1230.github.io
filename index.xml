@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Sep 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Sep 2019 12:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,158 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>JS 的基本语法</title>
+      <link>http://localhost:1313/post/js-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Wed, 11 Sep 2019 12:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js-%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;js-的基本语法&#34;&gt;JS 的基本语法&lt;/h1&gt;
+
+&lt;h2 id=&#34;表达式与语句&#34;&gt;表达式与语句&lt;/h2&gt;
+
+&lt;h3 id=&#34;表达式&#34;&gt;表达式&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1+2 表达式的值为 3&lt;/li&gt;
+&lt;li&gt;add(1,2)表达式的值为函数的返回值&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;语句&#34;&gt;语句&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;var a =1 是一个语句&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;二者的区别&#34;&gt;二者的区别&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;表达式一般都有值，语句有也可能没有&lt;/li&gt;
+&lt;li&gt;语句一般会改变环境(声明，赋值)&lt;/li&gt;
+&lt;li&gt;上面两句话不是绝对的&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;标识符&#34;&gt;标识符&lt;/h2&gt;
+
+&lt;h3 id=&#34;规则&#34;&gt;规则&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;第一个字符可以是 Unicode 字母或者\$或_或中文&lt;/li&gt;
+&lt;li&gt;后面的字符，除上面所说，还可以有数字&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;常用标识符举例&#34;&gt;常用标识符举例&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;var_&lt;/li&gt;
+&lt;li&gt;\$var&lt;/li&gt;
+&lt;li&gt;var3&lt;/li&gt;
+&lt;li&gt;pic_name&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;if-语句&#34;&gt;if 语句&lt;/h2&gt;
+
+&lt;h3 id=&#34;语法&#34;&gt;语法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;if(表达式){语句 1}else{语句 2}&lt;/li&gt;
+&lt;li&gt;{}在语句只有一句的时候可以省略，不建议这样做&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;变态情况&#34;&gt;变态情况&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;表达式里可以非常变态，如 a=1&lt;/li&gt;
+&lt;li&gt;语句 1 里可以非常变态，如嵌套的 if else&lt;/li&gt;
+&lt;li&gt;语句 2 里可以非常变态，如嵌套的 if else&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;缩进也可以很变态，如面试题常常下套&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a=1
+if(a===2)
+console.log(&#39;a&#39;)
+console.log(&#39;a等于2&#39;)
+//只打印a等于2，第2行的缩进可以打任意空格
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;switch-语句&#34;&gt;switch 语句&lt;/h2&gt;
+
+&lt;h3 id=&#34;语法-1&#34;&gt;语法&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;switch(fruit){
+    case &amp;quot;banana&amp;quot;:
+        //...
+        break;
+    case &amp;quot;apple&amp;quot;:
+        //...
+        break;
+    default:
+        //...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;break-注意事项&#34;&gt;break 注意事项&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;大部分时候，省略 break 就完了，case 会穿透，执行多个 case 语句，直到 break 才结束执行&lt;/li&gt;
+&lt;li&gt;少部分时候，可以利用 break&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;while-循环&#34;&gt;while 循环&lt;/h3&gt;
+
+&lt;h3 id=&#34;语法-2&#34;&gt;语法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;while(表达式){语句}&lt;/li&gt;
+&lt;li&gt;判断表达式的真假&lt;/li&gt;
+&lt;li&gt;当表达式为真，执行语句，执行完在判断表达式的真假&lt;/li&gt;
+&lt;li&gt;当表达式为假，执行后面的语句&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;for-循环&#34;&gt;for 循环&lt;/h2&gt;
+
+&lt;h3 id=&#34;语法糖&#34;&gt;语法糖&lt;/h3&gt;
+
+&lt;p&gt;-for 是 while 循环的方便写法&lt;/p&gt;
+
+&lt;h3 id=&#34;语法-3&#34;&gt;语法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;for(语句 1:表达式 2;语句 3){循环体}&lt;/li&gt;
+&lt;li&gt;先执行语句 1&lt;/li&gt;
+&lt;li&gt;如果为真，执行循环体，然后执行语句 3&lt;/li&gt;
+&lt;li&gt;如果为假，直接退出循环，执行后面的语句&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;break-和-continue&#34;&gt;break 和 continue&lt;/h2&gt;
+
+&lt;p&gt;break 在循环中，退出所有的循环。而 continue 则是退出当前的循环，后面的代码不执行，执行后面的循环。&lt;/p&gt;
+
+&lt;h2 id=&#34;label-语句&#34;&gt;label 语句&lt;/h2&gt;
+
+&lt;h3 id=&#34;语法-4&#34;&gt;语法&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;foo:{
+    console.log(1);
+    break foo;
+    console.log(&#39;本行不会输出&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;面试题&#34;&gt;面试题&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;{foo:1}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在 chorme 浏览器中是一个对象，在火狐浏览器中则是一个标签，值为 1&lt;/p&gt;
 </description>
       
     </item>
