@@ -77,15 +77,6 @@
 &lt;li&gt;后面的字符，除上面所说，还可以有数字&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;常用标识符举例&#34;&gt;常用标识符举例&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;var_&lt;/li&gt;
-&lt;li&gt;\$var&lt;/li&gt;
-&lt;li&gt;var3&lt;/li&gt;
-&lt;li&gt;pic_name&lt;/li&gt;
-&lt;/ul&gt;
-
 &lt;h2 id=&#34;if-语句&#34;&gt;if 语句&lt;/h2&gt;
 
 &lt;h3 id=&#34;语法&#34;&gt;语法&lt;/h3&gt;
