@@ -54,32 +54,36 @@
 
 &lt;li&gt;&lt;p&gt;键值对的集合&lt;/p&gt;
 
-&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;
+&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;&lt;/li&gt;
 
-&lt;pre&gt;&lt;code&gt;let obj={&#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:19}
-let obj=new Object({&#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:19})
-&lt;/code&gt;&lt;/pre&gt;
+&lt;li&gt;&lt;p&gt;let obj={&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:19}&lt;/p&gt;&lt;/li&gt;
 
-&lt;h3 id=&#34;细节&#34;&gt;细节&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;let obj=new Object({&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:19})&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;键名就算引号省略了,还是字符串&lt;/p&gt;&lt;/li&gt;
+&lt;h3 id=&#34;细节&#34;&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;键名就算引号省略了,还是字符串&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;删除对象的属性&#34;&gt;删除对象的属性&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;delete obj[&#39;name&#39;]
-&#39;name&#39; in obj//表示查找obj对象是否有name的属性
-obj.hasOwnProperty(&#39;name&#39;)//表示查找obj自身的对象中是否有name属性，不包含原型中的属性。
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;delete obj[&amp;lsquo;name&amp;rsquo;]&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;name&amp;rsquo; in obj//表示查找obj对象是否有name的属性&lt;/li&gt;
+&lt;li&gt;obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;)//表示查找obj自身的对象中是否有name属性，不包含原型中的属性。&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;查看对象的属性&#34;&gt;查看对象的属性&lt;/h2&gt;
 
-&lt;pre&gt;&lt;code&gt;Object.keys(obj)
-console.log(obj)
-obj[&#39;name&#39;]
-obj.name//记住这里的name是字符串
-obj[name]//记住这里的name是变量
-&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Object.keys(obj)&lt;/li&gt;
+&lt;li&gt;console.log(obj)&lt;/li&gt;
+&lt;li&gt;obj[&amp;lsquo;name&amp;rsquo;]&lt;/li&gt;
+&lt;li&gt;obj.name//记住这里的name是字符串&lt;/li&gt;
+&lt;li&gt;obj[name]//记住这里的name是变量&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;修改对象的属性&#34;&gt;修改对象的属性&lt;/h2&gt;
 
