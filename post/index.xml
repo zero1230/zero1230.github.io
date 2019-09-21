@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Sep 2019 12:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2019 14:30:52 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS对象</title>
+      <link>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Sat, 21 Sep 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1/</guid>
+      <description>JS对象 对象 定义 无序的数据激合 键值对的集合 写法 let obj={&#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:19} let obj=new Object({&#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:19}) 细节 键名就算引号省略了,还是字符串 删除对象的属性 delete obj[&#39;name&#39;] &#39;name&#39; in obj//表示查找obj对象</description>
+    </item>
     
     <item>
       <title>JS 的基本语法</title>

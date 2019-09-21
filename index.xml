@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Sep 2019 12:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Sep 2019 14:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,76 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>JS对象</title>
+      <link>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1/</link>
+      <pubDate>Sat, 21 Sep 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E5%AF%B9%E8%B1%A1/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;js对象&#34;&gt;JS对象&lt;/h1&gt;
+
+&lt;h2 id=&#34;对象&#34;&gt;对象&lt;/h2&gt;
+
+&lt;h3 id=&#34;定义&#34;&gt;定义&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;无序的数据激合&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;键值对的集合&lt;/p&gt;
+
+&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;let obj={&#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:19}
+let obj=new Object({&#39;name&#39;:&#39;frank&#39;,&#39;age&#39;:19})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;细节&#34;&gt;细节&lt;/h3&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;键名就算引号省略了,还是字符串&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;删除对象的属性&#34;&gt;删除对象的属性&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;delete obj[&#39;name&#39;]
+&#39;name&#39; in obj//表示查找obj对象是否有name的属性
+obj.hasOwnProperty(&#39;name&#39;)//表示查找obj自身的对象中是否有name属性，不包含原型中的属性。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;查看对象的属性&#34;&gt;查看对象的属性&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;Object.keys(obj)
+console.log(obj)
+obj[&#39;name&#39;]
+obj.name//记住这里的name是字符串
+obj[name]//记住这里的name是变量
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;修改对象的属性&#34;&gt;修改对象的属性&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;改自身obj[&amp;lsquo;name&amp;rsquo;]=&amp;lsquo;jack&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;批量修改自身 Object.assign(obj,{age:18,&amp;hellip;})&lt;/li&gt;
+&lt;li&gt;改共有属性obj.&lt;strong&gt;proto&lt;/strong&gt;[&amp;lsquo;toString&amp;rsquo;]=&amp;lsquo;xxx&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;改共有属性Object.prototype[&amp;lsquo;toString&amp;rsquo;]=&amp;lsquo;xxx&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;改原型obj.&lt;strong&gt;proto&lt;/strong&gt;=common&lt;/li&gt;
+&lt;li&gt;改原型let obj=Object.create(common)&lt;/li&gt;
+&lt;li&gt;注:所有的&lt;strong&gt;proto&lt;/strong&gt;代码都是强烈不推荐的
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;增加对象的属性&#34;&gt;增加对象的属性&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;基本同上:已有属性则改;没有属性则增。
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
