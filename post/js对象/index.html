@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-09-21T14:30:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-09-21T14:30:52&#43;08:00" />
-<meta itemprop="wordCount" content="459">
+<meta itemprop="wordCount" content="615">
 
 
 
@@ -374,6 +374,10 @@
 <li><a href="#查看对象的属性">查看对象的属性</a></li>
 <li><a href="#修改对象的属性">修改对象的属性</a></li>
 <li><a href="#增加对象的属性">增加对象的属性</a></li>
+<li><a href="#注意">注意</a>
+<ul>
+<li><a href="#name-in-obj和obj-hasownproperty-name-的区别">&lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别：</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -392,14 +396,15 @@
 
 <ul>
 <li>无序的数据激合</li>
+<li>键值对的集合
+<br /></li>
+</ul>
 
-<li><p>键值对的集合</p>
+<h3 id="写法">写法</h3>
 
-<h3 id="写法">写法</h3></li>
-
-<li><p>let obj={&lsquo;name&rsquo;:&lsquo;frank&rsquo;,&lsquo;age&rsquo;:19}</p></li>
-
-<li><p>let obj=new Object({&lsquo;name&rsquo;:&lsquo;frank&rsquo;,&lsquo;age&rsquo;:19})</p></li>
+<ul>
+<li>let obj={&lsquo;name&rsquo;:&lsquo;frank&rsquo;,&lsquo;age&rsquo;:19}</li>
+<li>let obj=new Object({&lsquo;name&rsquo;:&lsquo;frank&rsquo;,&lsquo;age&rsquo;:19})</li>
 </ul>
 
 <h3 id="细节">细节</h3>
@@ -442,7 +447,17 @@
 <h2 id="增加对象的属性">增加对象的属性</h2>
 
 <ul>
-<li>基本同上:已有属性则改;没有属性则增。
+<li>基本同上:已有属性则改;没有属性则增。</li>
+</ul>
+
+<h2 id="注意">注意</h2>
+
+<h3 id="name-in-obj和obj-hasownproperty-name-的区别">&lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别：</h3>
+
+<ul>
+<li>in表示obj对象中是否包含name字符串这个键，如果原型链中也有name字符串这个属性名，也可以返回true</li>
+<li>hasOwnProperty则表示在obj对象中是否包含name字符串这个属性名。不从含原型链中查找。
+<br />
 <br /></li>
 </ul>
 

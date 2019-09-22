@@ -51,14 +51,15 @@
 
 &lt;ul&gt;
 &lt;li&gt;无序的数据激合&lt;/li&gt;
+&lt;li&gt;键值对的集合
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;li&gt;&lt;p&gt;键值对的集合&lt;/p&gt;
+&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;
 
-&lt;h3 id=&#34;写法&#34;&gt;写法&lt;/h3&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;let obj={&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:19}&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;let obj=new Object({&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:19})&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;let obj={&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:19}&lt;/li&gt;
+&lt;li&gt;let obj=new Object({&amp;lsquo;name&amp;rsquo;:&amp;lsquo;frank&amp;rsquo;,&amp;lsquo;age&amp;rsquo;:19})&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;细节&#34;&gt;细节&lt;/h3&gt;
@@ -101,7 +102,17 @@
 &lt;h2 id=&#34;增加对象的属性&#34;&gt;增加对象的属性&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;基本同上:已有属性则改;没有属性则增。
+&lt;li&gt;基本同上:已有属性则改;没有属性则增。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;注意&#34;&gt;注意&lt;/h2&gt;
+
+&lt;h3 id=&#34;name-in-obj和obj-hasownproperty-name-的区别&#34;&gt;&amp;lsquo;name&amp;rsquo; in obj和obj.hasOwnProperty(&amp;lsquo;name&amp;rsquo;) 的区别：&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;in表示obj对象中是否包含name字符串这个键，如果原型链中也有name字符串这个属性名，也可以返回true&lt;/li&gt;
+&lt;li&gt;hasOwnProperty则表示在obj对象中是否包含name字符串这个属性名。不从含原型链中查找。
+&lt;br /&gt;
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
