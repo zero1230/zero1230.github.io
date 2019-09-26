@@ -70,15 +70,13 @@ for(i = 0; i&amp;lt;6; i++){
 &lt;ul&gt;
 &lt;li&gt;因为JS在for和let一起用的时候会加东西，每次循环都会多创建一个i，所以打印出来0、1、2、3、4、5&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;当然也可以使用自制行函数实现，如下&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;当然也可以使用自执行函数实现，存下局部变量，代码如下&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;!function count(){
-	    for (var i=0; i&amp;lt;6; i++) {
+&lt;pre&gt;&lt;code&gt;for (var i=0; i&amp;lt;6; i++) {
 	    	(function(i){
 	        	setTimeout(() =&amp;gt; console.log(i), 0)
 	    	})(i)
 	    }
-}()
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
