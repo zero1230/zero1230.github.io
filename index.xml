@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Sep 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Sep 2019 14:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,58 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>JS函数的执行时机</title>
+      <link>http://localhost:1313/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <pubDate>Thu, 26 Sep 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;js函数的执行时机&#34;&gt;JS函数的执行时机&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;let i = 0
+for(i = 0; i&amp;lt;6; i++){
+  setTimeout(()=&amp;gt;{
+    console.log(i)
+  },0)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;上面的代码会打印出6个6。因为for循环6次后，才会执行setTimeout函数里的打印i数值6次，此时数值i变为6，所以打印6个6。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;让上面代码打印0-1-2-3-4-5-的方法则如下&#34;&gt;让上面代码打印0、1、2、3、4、5 的方法则如下&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;for(let i = 0; i&amp;lt;6; i++){
+  setTimeout(()=&amp;gt;{
+    console.log(i)
+  },0)
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;因为JS在for和let一起用的时候会加东西，每次循环都会多创建一个i，所以打印出来0、1、2、3、4、5&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;当然也可以使用自制行函数实现，如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;!function count(){
+	    for (var i=0; i&amp;lt;6; i++) {
+	    	(function(i){
+	        	setTimeout(() =&amp;gt; console.log(i), 0)
+	    	})(i)
+	    }
+}()
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>
