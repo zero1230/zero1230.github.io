@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Sep 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2019 14:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,82 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>jQuery的功能</title>
+      <link>http://localhost:1313/post/jquery%E7%9A%84%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Mon, 28 Oct 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/jquery%E7%9A%84%E5%8A%9F%E8%83%BD/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;jquery的功能&#34;&gt;jQuery的功能&lt;/h1&gt;
+
+&lt;p&gt;1.jQuery 如何获取元素&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(document) //选择整个文档对象
+
+$(&#39;#myId&#39;) //选择ID为myId的网页元素
+
+$(&#39;div.myClass&#39;) // 选择class为myClass的div元素
+
+$(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素
+
+$(&#39;a:first&#39;) //选择网页中第一个a元素
+
+$(&#39;tr:odd&#39;) //选择表格的奇数行
+
+$(&#39;#myForm :input&#39;) // 选择表单中的input元素
+
+$(&#39;div:visible&#39;) //选择可见的div元素
+
+$(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个
+
+$(&#39;div:animated&#39;) // 选择当前处于动画状态的div元素
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2.jQuery 的链式操作是怎样的&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;);
+//分解开来
+$(&#39;div&#39;) //找到div元素
+
+.find(&#39;h3&#39;) //选择其中的h3元素
+
+.eq(2) //选择第3个h3元素
+
+.html(&#39;Hello&#39;); //将它的内容改为Hello
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3.jQuery 如何创建元素&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&#39;);
+
+$(&#39;&amp;lt;li class=&amp;quot;new&amp;quot;&amp;gt;new list item&amp;lt;/li&amp;gt;&#39;);
+
+$(&#39;ul&#39;).append(&#39;&amp;lt;li&amp;gt;list item&amp;lt;/li&amp;gt;&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;4.jQuery 如何移动元素&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;div&#39;).insertAfter($(&#39;p&#39;));
+//把div元素移动p元素后面
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;5.jQuery 如何修改元素的属性&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&amp;quot;.demo&amp;quot;).attr(&amp;quot;_id&amp;quot;,&amp;quot;abc&amp;quot;)//attr可以获取或者给demo上添加自定义的_id属性。
+
+$(&amp;quot;.demo&amp;quot;).addClass(&amp;quot;abc&amp;quot;)
+//修改class类名之类的
+
+$(&amp;quot;.demo&amp;quot;).removeClass(&amp;quot;abc&amp;quot;)//删除class
+&lt;/code&gt;&lt;/pre&gt;
 </description>
       
     </item>
