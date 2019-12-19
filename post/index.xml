@@ -6,10 +6,19 @@
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Oct 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Dec 2019 14:30:52 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MVC浅析</title>
+      <link>http://localhost:1313/post/mvc%E6%B5%85%E6%9E%90/</link>
+      <pubDate>Thu, 19 Dec 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/mvc%E6%B5%85%E6%9E%90/</guid>
+      <description>MVC浅析 一、MVC的三个对象 M：Model数据模式，负责操作所有数据 V：View视图，负责所有UI界面 C：Controller，控制器负责</description>
+    </item>
     
     <item>
       <title>jQuery的功能</title>

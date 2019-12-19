@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My Blog</title>
+  <title>MVC浅析 - My Blog</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="zero1230" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="MVC浅析 一、MVC的三个对象 M：Model数据模式，负责操作所有数据 V：View视图，负责所有UI界面 C：Controller，控制器负责" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,7 @@
 <meta name="generator" content="Hugo 0.56.3" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/index.xml%20http://localhost:1313/index.xml%7d" rel="alternate" type="application/rss+xml" title="My Blog" />
+<link rel="canonical" href="http://localhost:1313/post/mvc%E6%B5%85%E6%9E%90/" />
 
 
 
@@ -57,18 +57,26 @@
 
 
 
-<meta property="og:title" content="My Blog" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:title" content="MVC浅析" />
+<meta property="og:description" content="MVC浅析 一、MVC的三个对象 M：Model数据模式，负责操作所有数据 V：View视图，负责所有UI界面 C：Controller，控制器负责" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/mvc%E6%B5%85%E6%9E%90/" />
+<meta property="article:published_time" content="2019-12-19T14:30:52+08:00" />
+<meta property="article:modified_time" content="2019-12-19T14:30:52+08:00" />
+<meta itemprop="name" content="MVC浅析">
+<meta itemprop="description" content="MVC浅析 一、MVC的三个对象 M：Model数据模式，负责操作所有数据 V：View视图，负责所有UI界面 C：Controller，控制器负责">
 
-<meta property="og:updated_time" content="2019-12-19T14:30:52+08:00" />
-<meta itemprop="name" content="My Blog">
-<meta itemprop="description" content="Hugo theme jane example site.">
 
+<meta itemprop="datePublished" content="2019-12-19T14:30:52&#43;08:00" />
+<meta itemprop="dateModified" content="2019-12-19T14:30:52&#43;08:00" />
+<meta itemprop="wordCount" content="456">
+
+
+
+<meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="My Blog"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta name="twitter:title" content="MVC浅析"/>
+<meta name="twitter:description" content="MVC浅析 一、MVC的三个对象 M：Model数据模式，负责操作所有数据 V：View视图，负责所有UI界面 C：Controller，控制器负责"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -235,7 +243,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -327,158 +335,249 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-  <section id="posts" class="posts">
+          <article class="post bg-white">
     
-    
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">MVC浅析</h1>
       
-      <a class="post-link" href="/post/html%E9%87%8D%E7%82%B9%E6%A0%87%E7%AD%BE/">html重点标签</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2019-12-19" class="post-time">
+          2019-12-19
+        </time>
+        
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2019-08-17" class="post-time">
-        2019-08-17
-      </time>
-      
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
-      html 重点标签 a 标签 属性 href 超链接 target href 超链接，取值可以有网站，如//google.com,也可以路径，比如/a/b/c,a/b/c,index.h
-    </div>
-    <div class="read-more">
-      <a href="/post/html%E9%87%8D%E7%82%B9%E6%A0%87%E7%AD%BE/" class="read-more-link">阅读全文</a>
-    </div>
-    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#mvc浅析">MVC浅析</a>
+<ul>
+<li><a href="#一-mvc的三个对象">一、MVC的三个对象</a></li>
+<li><a href="#二-eventbus">二、EventBus</a></li>
+<li><a href="#三-表驱动编程">三、表驱动编程</a></li>
+<li><a href="#四-模块化">四、模块化</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
   </div>
-</article>
+</div>
 
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <div class="post-content">
       
-      <a class="post-link" href="/post/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">hugo博客搭建</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-08-16" class="post-time">
-        2019-08-16
-      </time>
-      
-      
-      
-      
+
+<h2 id="mvc浅析">MVC浅析</h2>
+
+<h3 id="一-mvc的三个对象">一、MVC的三个对象</h3>
+
+<ul>
+<li><p>M：Model数据模式，负责操作所有数据</p></li>
+
+<li><p>V：View视图，负责所有UI界面</p></li>
+
+<li><p>C：Controller，控制器负责其他</p></li>
+</ul>
+
+<p>代码示例</p>
+
+<pre><code>import './app1.css'
+import $ from 'jquery'
+
+const eventBus = $(window)
+// 数据相关都放到m
+const m = {
+  data: {
+    n: parseInt(localStorage.getItem('n'))
+  },
+  create() {},
+  delete() {},
+  update(data) {
+    Object.assign(m.data, data)
+    eventBus.trigger('m:updated')
+    localStorage.setItem('n', m.data.n)
+  },
+  get() {}
+}
+// 视图相关都放到v
+const v = {
+  el: null,
+  html: `
+  &lt;div&gt;
+    &lt;div class=&quot;output&quot;&gt;
+      &lt;span id=&quot;number&quot;&gt;{{n}}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;actions&quot;&gt;
+      &lt;button id=&quot;add1&quot;&gt;+1&lt;/button&gt;
+      &lt;button id=&quot;minus1&quot;&gt;-1&lt;/button&gt;
+      &lt;button id=&quot;mul2&quot;&gt;*2&lt;/button&gt;
+      &lt;button id=&quot;divide2&quot;&gt;÷2&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+`,
+  init(container) {
+    v.el = $(container)
+  },
+  render(n) {
+    if (v.el.children.length !== 0) v.el.empty()
+    $(v.html.replace('{{n}}', n))
+      .appendTo(v.el)
+  }
+}
+// 其他都c
+const c = {
+  init(container) {
+    v.init(container)
+    v.render(m.data.n) // view = render(data)
+    c.autoBindEvents()
+    eventBus.on('m:updated', () =&gt; {
+      console.log('here')
+      v.render(m.data.n)
+    })
+  },
+  events: {
+    'click #add1': 'add',
+    'click #minus1': 'minus',
+    'click #mul2': 'mul',
+    'click #divide2': 'div',
+  },
+  add() {
+    m.update({n: m.data.n + 1})
+  },
+  minus() {
+    m.update({n: m.data.n - 1})
+  },
+  mul() {
+    m.update({n: m.data.n * 2})
+  },
+  div() {
+    m.update({n: m.data.n / 2})
+  },
+  autoBindEvents() {
+    for (let key in c.events) {
+      const value = c[c.events[key]]
+      const spaceIndex = key.indexOf(' ')
+      const part1 = key.slice(0, spaceIndex)
+      const part2 = key.slice(spaceIndex + 1)
+      v.el.on(part1, part2, value)
+    }
+  }
+}
+
+export default c
+
+</code></pre>
+
+<h3 id="二-eventbus">二、EventBus</h3>
+
+<p>可以进行组件之间的监听和通信
+- EventBus.on（）监听事件</p>
+
+<pre><code>eventBus.trigger('m:updated')
+</code></pre>
+
+<ul>
+<li><p>EventBus.trigger（）触发事件</p>
+
+<pre><code>eventBus.on('m:updated',()=&gt;{
+ v.render(m.data.n)
+})
+</code></pre>
+
+<h3 id="三-表驱动编程">三、表驱动编程</h3></li>
+
+<li><p>表驱动编程是指从表里面查找信息, 将重复的代码用哈希表的方式去简化</p></li>
+</ul>
+
+<h3 id="四-模块化">四、模块化</h3>
+
+<ul>
+<li>模块化就是把不同的功能模块独立，是代码简洁明了</li>
+</ul>
+
     </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      hugo 博客搭建 安装 hugo mac 安装方式 使用命令 brew install hugo 然后 hugo version 查看版本号是否安装成功 window 安装方式 去 hugo release 页面下载，然后解压，把 hugo.exe 放到 D:\Software\h
-    </div>
-    <div class="read-more">
-      <a href="/post/hugo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
 
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/">html标签入门笔记1</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2019-08-12" class="post-time">
-        2019-08-12
-      </time>
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">zero1230</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+      2019-12-19
       
-      
-      
-      
-    </div>
-  </header>
+    </span>
+  </p>
   
-  <div class="post-content">
-    
-    <div class="post-summary">
-      HTML 标签入门笔记 1 HTML 发明者 是由蒂姆·伯纳斯-李 90 年左右创造发明的，发明了一套 html,url,http 规则。 HTML 页面起手需要写的格式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;en&quot;&gt; &lt;!-- 语言的标签，可
-    </div>
-    <div class="read-more">
-      <a href="/post/html%E6%A0%87%E7%AD%BE%E5%85%A5%E9%97%A8/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
 
     
-  </section>
+    
 
-  
-  
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
+    <footer class="post-footer">
       
-      <li >
-        <a href="/">1</a>
-      </li>
+
       
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/page/3/">3</a>
-      </li>
-      
-      <li  class="active" >
-        <a href="/page/4/">4</a>
-      </li>
-      
-      <li >
-        <a href="/page/5/">5</a>
-      </li>
-      
-    </ul>
-  </nav>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/jquery%E7%9A%84%E5%8A%9F%E8%83%BD/">
+            <span class="next-text nav-default">jQuery的功能</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
 
+  
+  
 
+  
 
+  
+  
 
+  
+
+  
+
+  
+
+    
 
         </div>
       </div>

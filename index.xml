@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Oct 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 19 Dec 2019 14:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,146 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>MVC浅析</title>
+      <link>http://localhost:1313/post/mvc%E6%B5%85%E6%9E%90/</link>
+      <pubDate>Thu, 19 Dec 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/mvc%E6%B5%85%E6%9E%90/</guid>
+      
+        <description>
+
+&lt;h2 id=&#34;mvc浅析&#34;&gt;MVC浅析&lt;/h2&gt;
+
+&lt;h3 id=&#34;一-mvc的三个对象&#34;&gt;一、MVC的三个对象&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;M：Model数据模式，负责操作所有数据&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;V：View视图，负责所有UI界面&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;C：Controller，控制器负责其他&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;代码示例&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import &#39;./app1.css&#39;
+import $ from &#39;jquery&#39;
+
+const eventBus = $(window)
+// 数据相关都放到m
+const m = {
+  data: {
+    n: parseInt(localStorage.getItem(&#39;n&#39;))
+  },
+  create() {},
+  delete() {},
+  update(data) {
+    Object.assign(m.data, data)
+    eventBus.trigger(&#39;m:updated&#39;)
+    localStorage.setItem(&#39;n&#39;, m.data.n)
+  },
+  get() {}
+}
+// 视图相关都放到v
+const v = {
+  el: null,
+  html: `
+  &amp;lt;div&amp;gt;
+    &amp;lt;div class=&amp;quot;output&amp;quot;&amp;gt;
+      &amp;lt;span id=&amp;quot;number&amp;quot;&amp;gt;{{n}}&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div class=&amp;quot;actions&amp;quot;&amp;gt;
+      &amp;lt;button id=&amp;quot;add1&amp;quot;&amp;gt;+1&amp;lt;/button&amp;gt;
+      &amp;lt;button id=&amp;quot;minus1&amp;quot;&amp;gt;-1&amp;lt;/button&amp;gt;
+      &amp;lt;button id=&amp;quot;mul2&amp;quot;&amp;gt;*2&amp;lt;/button&amp;gt;
+      &amp;lt;button id=&amp;quot;divide2&amp;quot;&amp;gt;÷2&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+  &amp;lt;/div&amp;gt;
+`,
+  init(container) {
+    v.el = $(container)
+  },
+  render(n) {
+    if (v.el.children.length !== 0) v.el.empty()
+    $(v.html.replace(&#39;{{n}}&#39;, n))
+      .appendTo(v.el)
+  }
+}
+// 其他都c
+const c = {
+  init(container) {
+    v.init(container)
+    v.render(m.data.n) // view = render(data)
+    c.autoBindEvents()
+    eventBus.on(&#39;m:updated&#39;, () =&amp;gt; {
+      console.log(&#39;here&#39;)
+      v.render(m.data.n)
+    })
+  },
+  events: {
+    &#39;click #add1&#39;: &#39;add&#39;,
+    &#39;click #minus1&#39;: &#39;minus&#39;,
+    &#39;click #mul2&#39;: &#39;mul&#39;,
+    &#39;click #divide2&#39;: &#39;div&#39;,
+  },
+  add() {
+    m.update({n: m.data.n + 1})
+  },
+  minus() {
+    m.update({n: m.data.n - 1})
+  },
+  mul() {
+    m.update({n: m.data.n * 2})
+  },
+  div() {
+    m.update({n: m.data.n / 2})
+  },
+  autoBindEvents() {
+    for (let key in c.events) {
+      const value = c[c.events[key]]
+      const spaceIndex = key.indexOf(&#39; &#39;)
+      const part1 = key.slice(0, spaceIndex)
+      const part2 = key.slice(spaceIndex + 1)
+      v.el.on(part1, part2, value)
+    }
+  }
+}
+
+export default c
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;二-eventbus&#34;&gt;二、EventBus&lt;/h3&gt;
+
+&lt;p&gt;可以进行组件之间的监听和通信
+- EventBus.on（）监听事件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eventBus.trigger(&#39;m:updated&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;EventBus.trigger（）触发事件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eventBus.on(&#39;m:updated&#39;,()=&amp;gt;{
+ v.render(m.data.n)
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;三-表驱动编程&#34;&gt;三、表驱动编程&lt;/h3&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;表驱动编程是指从表里面查找信息, 将重复的代码用哈希表的方式去简化&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;四-模块化&#34;&gt;四、模块化&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;模块化就是把不同的功能模块独立，是代码简洁明了&lt;/li&gt;
+&lt;/ul&gt;
 </description>
       
     </item>

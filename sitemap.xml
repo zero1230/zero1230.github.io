@@ -9,14 +9,21 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/mvc%E6%B5%85%E6%9E%90/</loc>
+    <lastmod>2019-12-19T14:30:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2019-10-28T14:30:52+08:00</lastmod>
+    <lastmod>2019-12-19T14:30:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-10-28T14:30:52+08:00</lastmod>
+    <lastmod>2019-12-19T14:30:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
