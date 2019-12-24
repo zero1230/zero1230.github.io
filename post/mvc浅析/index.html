@@ -69,7 +69,7 @@
 
 <meta itemprop="datePublished" content="2019-12-19T14:30:52&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-19T14:30:52&#43;08:00" />
-<meta itemprop="wordCount" content="456">
+<meta itemprop="wordCount" content="455">
 
 
 
@@ -484,23 +484,26 @@ export default c
 
 <h3 id="二-eventbus">二、EventBus</h3>
 
-<p>可以进行组件之间的监听和通信
-- EventBus.on（）监听事件</p>
-
-<pre><code>eventBus.trigger('m:updated')
-</code></pre>
+<p>可以进行组件之间的监听和通信</p>
 
 <ul>
+<li><p>EventBus.on（）监听事件</p>
+
+<pre><code>eventBus.trigger('m:updated')
+</code></pre></li>
+
 <li><p>EventBus.trigger（）触发事件</p>
 
 <pre><code>eventBus.on('m:updated',()=&gt;{
  v.render(m.data.n)
 })
-</code></pre>
+</code></pre></li>
+</ul>
 
-<h3 id="三-表驱动编程">三、表驱动编程</h3></li>
+<h3 id="三-表驱动编程">三、表驱动编程</h3>
 
-<li><p>表驱动编程是指从表里面查找信息, 将重复的代码用哈希表的方式去简化</p></li>
+<ul>
+<li>表驱动编程是指从表里面查找信息, 将重复的代码用哈希表的方式去简化</li>
 </ul>
 
 <h3 id="四-模块化">四、模块化</h3>
@@ -542,6 +545,19 @@ export default c
       
       <nav class="post-nav">
         
+          <a class="prev" href="/post/vue-%E4%B8%A4%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%BF%E7%94%A8/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">Vue 两个版本的区别和使用方法</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         
           <a class="next" href="/post/jquery%E7%9A%84%E5%8A%9F%E8%83%BD/">
             <span class="next-text nav-default">jQuery的功能</span>

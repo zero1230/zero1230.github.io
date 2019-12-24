@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Dec 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 24 Dec 2019 14:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,103 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Vue 两个版本的区别和使用方法</title>
+      <link>http://localhost:1313/post/vue-%E4%B8%A4%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 24 Dec 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/vue-%E4%B8%A4%E4%B8%AA%E7%89%88%E6%9C%AC%E7%9A%84%E5%8C%BA%E5%88%AB%E5%92%8C%E4%BD%BF%E7%94%A8/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;vue-两个版本的区别和使用方法&#34;&gt;Vue 两个版本的区别和使用方法&lt;/h1&gt;
+
+&lt;h3 id=&#34;vue-有-2-个版本-分别为-vue-js-和-vue-runtime-js&#34;&gt;Vue 有 2 个版本，分别为 vue.js 和 vue.runtime.js&lt;/h3&gt;
+
+&lt;p&gt;vue.js 使用 template，代码如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;new Vue(
+    {
+        el:&#39;#app&#39;,
+        data():{
+            n:0
+        },
+        template:`
+            &amp;lt;div&amp;gt;{{n}}&amp;lt;/div&amp;gt;
+        `
+    }
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;vue.runtime.js使用单文件组件，比如新建一个demo.vue,代码如下&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+    &amp;lt;div class=&amp;quot;red&amp;quot;&amp;gt;
+        {{n}}
+        &amp;lt;button @click=&amp;quot;add&amp;quot;&amp;gt;+1
+        
+        &amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default {
+    data(){
+        return{
+            n:0
+        }
+    },
+    methods:{
+        add(){
+            this.n+=1
+        }
+    }
+}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+    .red{
+        background: red;
+    }
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在main.js中用render函数&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import demo from &#39;./demo.vue&#39;
+new Vue({
+    el:&#39;#app&#39;,
+    render(h){
+        h(demo)
+    },
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;vue-js-为-vue-的完整版&#34;&gt;vue.js 为 Vue 的完整版&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;特点:有编译器&lt;/li&gt;
+&lt;li&gt;试图:写在 html 里或者写在 template 选项&lt;/li&gt;
+&lt;li&gt;cdn 引入:vue.js&lt;/li&gt;
+&lt;li&gt;webpack 引入:需要配置 alias&lt;/li&gt;
+&lt;li&gt;@vue/cli 引入:需要额外配置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;vue-runtime-js-为-vue-非完整版&#34;&gt;vue.runtime.js 为 Vue 非完整版&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;特点:没有编译器&lt;/li&gt;
+&lt;li&gt;视图:写在 render 函数里,用 h 来创建标签&lt;/li&gt;
+&lt;li&gt;cdn 引入:vue.runtime.js&lt;/li&gt;
+&lt;li&gt;webpack 引入:默认使用此版&lt;/li&gt;
+&lt;li&gt;@vue/cli 引入:默认使用此版&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;小结：总是使用非完整版,然后配合 vue-loader 和 vue 文件。保证用户体验，用户下载的 JS 文件体积更小，但只支持 h 函数。保证开发体验，开发者可直接在 vue 文件里写 HTML 标签,而不写 h 函数。&lt;/p&gt;
 </description>
       
     </item>
@@ -146,23 +243,26 @@ export default c
 
 &lt;h3 id=&#34;二-eventbus&#34;&gt;二、EventBus&lt;/h3&gt;
 
-&lt;p&gt;可以进行组件之间的监听和通信
-- EventBus.on（）监听事件&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;eventBus.trigger(&#39;m:updated&#39;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以进行组件之间的监听和通信&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;EventBus.on（）监听事件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;eventBus.trigger(&#39;m:updated&#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;EventBus.trigger（）触发事件&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;eventBus.on(&#39;m:updated&#39;,()=&amp;gt;{
  v.render(m.data.n)
 })
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h3 id=&#34;三-表驱动编程&#34;&gt;三、表驱动编程&lt;/h3&gt;&lt;/li&gt;
+&lt;h3 id=&#34;三-表驱动编程&#34;&gt;三、表驱动编程&lt;/h3&gt;
 
-&lt;li&gt;&lt;p&gt;表驱动编程是指从表里面查找信息, 将重复的代码用哈希表的方式去简化&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;表驱动编程是指从表里面查找信息, 将重复的代码用哈希表的方式去简化&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;四-模块化&#34;&gt;四、模块化&lt;/h3&gt;
