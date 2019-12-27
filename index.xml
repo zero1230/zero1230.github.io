@@ -1625,5 +1625,21 @@ public class OperateClass {
       
     </item>
     
+    <item>
+      <title>测试</title>
+      <link>http://localhost:1313/post/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%8B%E8%AF%95/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;大家好&#34;&gt;大家好&lt;/h1&gt;
+
+&lt;p&gt;这是测试博客&lt;/p&gt;
+</description>
+      
+    </item>
+    
   </channel>
 </rss>

@@ -155,5 +155,14 @@
       <description>自定义栈 代码如下 public class MyStack&amp;lt;E&amp;gt; { private int top=-1; private Object[] stack; public MyStack(){ stack=new Object[10]; } public boolean isEmpty(){ return top==-1; } public E push(E item){ stack[++top]=item; return item; } public E peek(){ if(isEmpty()){ return null; } return (E)stack[top]; } public E pop(){ E e = peek(); stack[top]=null; top--; return e; } /* * 栈满扩容 * * */ public void</description>
     </item>
     
+    <item>
+      <title>测试</title>
+      <link>http://localhost:1313/post/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Sun, 11 Aug 2019 14:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%B5%8B%E8%AF%95/</guid>
+      <description>大家好 这是测试博客</description>
+    </item>
+    
   </channel>
 </rss>

@@ -133,6 +133,13 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/post/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2019-08-11T14:30:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/categories/</loc>
     <priority>0</priority>
   </url>
