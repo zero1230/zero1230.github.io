@@ -10,14 +10,21 @@
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2019-12-24T14:30:52+08:00</lastmod>
+    <lastmod>2019-12-27T13:30:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2019-12-24T14:30:52+08:00</lastmod>
+    <lastmod>2019-12-27T13:30:52+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/vue-%E4%B8%AD%E7%9A%84-.sync-%E4%BF%AE%E9%A5%B0%E7%AC%A6/</loc>
+    <lastmod>2019-12-27T13:30:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

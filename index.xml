@@ -6,7 +6,7 @@
     <description>Recent content on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Dec 2019 14:30:52 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Dec 2019 13:30:52 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
@@ -30,6 +30,92 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Vue 中的 .sync 修饰符</title>
+      <link>http://localhost:1313/post/vue-%E4%B8%AD%E7%9A%84-.sync-%E4%BF%AE%E9%A5%B0%E7%AC%A6/</link>
+      <pubDate>Fri, 27 Dec 2019 13:30:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/vue-%E4%B8%AD%E7%9A%84-.sync-%E4%BF%AE%E9%A5%B0%E7%AC%A6/</guid>
+      
+        <description>
+
+&lt;h1 id=&#34;vue-中的-sync-修饰符&#34;&gt;Vue 中的 .sync 修饰符&lt;/h1&gt;
+
+&lt;p&gt;.sync 修饰符可以用下面的代码案例来解释。儿子花钱，要问父亲要钱的例子。&lt;/p&gt;
+
+&lt;h3 id=&#34;parent-vue-代码如下&#34;&gt;parent.vue 代码如下&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div&amp;gt;
+    {{total}}
+    &amp;lt;hr&amp;gt;
+    &amp;lt;child :money=&amp;quot;total&amp;quot; @update:money=&amp;quot;total=$event&amp;quot;/&amp;gt;
+   &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+
+import Child from &#39;./child.vue&#39;
+export default {
+
+  data(){
+    return {
+      total:10000,
+    }
+  },
+  components:{Child}
+
+
+
+}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;child-vue-代码如下&#34;&gt;child.vue 代码如下&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;template&amp;gt;
+  &amp;lt;div&amp;gt;
+    爸爸的钱:{{money}}
+    &amp;lt;button @click=&amp;quot;$emit(&#39;update:money&#39;,money-100)&amp;quot;&amp;gt;问爸爸要钱&amp;lt;/button&amp;gt;
+  &amp;lt;/div&amp;gt;
+
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+
+
+export default {
+  props:[&amp;quot;money&amp;quot;]
+
+
+
+}
+&amp;lt;/script&amp;gt;
+
+&amp;lt;style scoped&amp;gt;
+
+&amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;其中 parent.vue 代码中的&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;child :money=&amp;quot;total&amp;quot; @update:money=&amp;quot;total=$event&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;可以简写为&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; &amp;lt;child :money.sync=&amp;quot;total&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;.sync 说到底就是一个语法糖而已。&lt;/p&gt;
 </description>
       
     </item>
